@@ -148,7 +148,7 @@ users:
 - name: ${aws_eks_cluster.tlc.arn}
     user:
     exec:
-        apiVersion: cluent.authentication.k8s.io/v1
+        apiVersion: client.authentication.k8s.io/v1
         command: aws-iam-authenticator
         args:
         - "token"
